@@ -1,2 +1,16 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<section class="centerForm">
+	<%= form_for :session, :url=>sessions_path, :method=>:post do |f|%>
+		<p class = "centerFormElement">
+			<%= f.label :username, "Username:" %>
+			<%= f.text_field :username , :required =>true%>
+		</p>
+
+		<p class = "centerFormElement">
+			<%= f.label :password, "Password:" %>
+			<%= f.password_field :password, :required =>true%>
+		</p>
+		<p class = "centerFormElement">
+			<%= f.submit "Log in"%>
+		</p>
+	<%end%>
+</section>
