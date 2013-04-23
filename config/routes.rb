@@ -1,12 +1,12 @@
 ChatAppAuth::Application.routes.draw do
-  resources :users
-  resources :sessions
+  
   root :to => "public_pages#home"
   match 'signup' => 'users#new'
   match 'login' => 'sessions#new'
   match 'sessions' => 'sessions#create', :via => :post
-  match 'logout' => 'sessions#destroy', :via => :delete
-
+  match 'logout' => 'sessions#destroy'
+resources :users
+  resources :sessions
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
