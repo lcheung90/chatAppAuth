@@ -1,2 +1,11 @@
-<h1>Chats#room</h1>
-<p>Find me in app/views/chats/room.html.erb</p>
+<h1>Chatsroom</h1>
+<div class="chat_container">
+  <div id="chat_room">
+    <p class="alert"> Welcome to the chat room <%= session[:username] %>! </p>
+  </div>
+ 
+  <form id="new_message_form">
+    <input type="text" id="message" name="message">
+    <input type="submit" value="Send">
+  </form>
+</div>
