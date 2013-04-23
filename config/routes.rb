@@ -1,5 +1,7 @@
 ChatAppAuth::Application.routes.draw do
   
+  match 'chatsroom' => 'chats#room'
+
   root :to => "public_pages#home"
   match 'signup' => 'users#new'
   match 'login' => 'sessions#new'
