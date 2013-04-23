@@ -10,6 +10,7 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'thin'
 gem 'faye'
+gem 'private_pub'
 
 
 # Gems used only for assets and not required
