@@ -6,13 +6,15 @@ class SessionsController < ApplicationController
   	@user = User.find_by_username(params[:session][:username].downcase)
 		if @user && @user.authenticate(params[:session][:password])
 			reset_session
-			session[:user_id] = @user.id
+			session[:username] = @user.username
 			flash[:notice] = "Successfully Logged in"
 			redirect_to user_url(params[:session][:username])
 		else
 			flash.now[:notice] = "Please provide valid credentials"
 			render :new
 		end
+    #session[:username] = params[:username]
+  #render :text => "Welcome #{session[:username]}!"
   end
 
   def destroy

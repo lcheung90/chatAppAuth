@@ -9,7 +9,6 @@ gem 'sqlite3'
 gem 'execjs'
 gem 'therubyracer'
 gem 'thin'
-gem 'faye'
 gem 'private_pub'
 
 

@@ -1,2 +1,3 @@
 <h1>Welcome <%=@user.username%></h1>
 <%= link_to "Logout", logout_path, :method => :delete%>
+<%= link_to "Join chat", chatroom_path(:username =>@user.username)%>

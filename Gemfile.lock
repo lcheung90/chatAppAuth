@@ -142,7 +142,6 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
   execjs
-  faye
   jquery-rails
   private_pub
   rails (= 3.2.13)
