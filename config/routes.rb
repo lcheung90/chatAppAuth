@@ -10,6 +10,7 @@ ChatAppAuth::Application.routes.draw do
   match 'logout' => 'sessions#destroy'
 resources :users
   resources :sessions
+  resources :chats
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
